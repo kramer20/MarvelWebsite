@@ -5,6 +5,8 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Bangers|Monofett" rel="stylesheet">
+		<script src="https://use.fontawesome.com/3bc19f98ca.js"></script>
+
 </head>
 <body>
 
@@ -25,18 +27,33 @@
 				</div>
 			</div>
 
+
+
 				<div class="row">
-						<div class="col-lg-4 contactContainer left">
-							
+					<div class="col-lg-12 col-md-12 contactTitleContain">
+						<h2 class="contactTitle">Get In Touch</h2>
+					</div>
+						<div class="col-lg-5 contactContainer left">
+							<div class="markerSpot">
+								<i class="fa fa-map-marker markerIcon" aria-hidden="true"></i>
+								<p class="location">2345 Notreal Ave.</p>
+								<p class="location two">New York, New York</p>
+							</div>
+							<div class="cellSpot">
+								<i class="fa fa-mobile cellIcon" aria-hidden="true"></i>
+								<p class="call">Call Us</p>
+								<p class="number">(123) 456-7890</p>
+							</div>
+							<div class="emailSpot">
+								<i class="fa fa-envelope envelopeIcon" aria-hidden="true"></i>
+								<p class="email">Email Us</p>
+								<p class="eAddress">omgcomics2@gmail.com</p>
+							</div>
 						</div>
 
-						<div class="col-lg-8 contactContainer right">
-							
-						</div>	
-
-						<div class="row">
-							<div class="col-lg-12 contactContainer bottom">
-							</div>
+						<div class="col-lg-7 contactContainer right">
+							 <h3 class="mapTitle">Find Us on a Map</h3>
+  								  <div id="map"></div>
 						</div>	
 				</div>
 
@@ -44,7 +61,8 @@
 	</div>		
   <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt-jsamV4PszGB2VGUeR9ri1W2I1HLdbw&callback=initMap"></script>
 
 </body>
 </html>

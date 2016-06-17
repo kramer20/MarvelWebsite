@@ -1,12 +1,12 @@
 body {
 	background-image:url('http://smhttp.34344.nexcesscdn.net/80100D2/magento/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/j/l/jl1290m_marvel_classics_comic_panel_mural_product.jpg');
-	background-size:cover;
+	background-size:100%;
 
 }
 
 .marvelLogo {
 	height:167px;
 	margin-top:44px;
-	border:8px solid lighten($marvel-black,5);
+	border:$border-nav;
 	padding:10px;
 }

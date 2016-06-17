@@ -4,6 +4,8 @@ $marvel-red:#ED1A23;
 $marvel-black:#212121;
 $nav-font:'Bangers', cursive;
 $marvel-blue:#0572B9;
+$border-content:10px solid lighten($marvel-black,5);
+$border-nav:8px solid lighten($marvel-black,5);
 
 @import 'images';
 @import 'contact';
@@ -68,37 +70,41 @@ $marvel-blue:#0572B9;
 }
 
 .textContainer {
-	height:800px;
-	//width:900px;
-	//margin:0 auto;
-	//display:block;
 	margin-top:50px;
-	//z-index:9999;
 	background-color:$marvel-blue;
 	vertical-align:center;
 	opacity:0.96;
-	position:absolute;
-	//margin-left:107px;
-	border: 14px solid lighten($marvel-black,5);
+	border: $border-content;
 	padding:20px;
 
 }
-
-.feature.leftTop, .middleTop, .rightTop{
-	border:4px solid $marvel-yellow;
-	height:180px;
-	//width:180px;
-	margin-left:20px;
-	display:inline-block;
-
-}
-
-
 
 .three {
 	text-align:center;
 	font-family:$accent-font;
 	font-size:65px;
+	margin-top:20px;
+	margin-bottom:40px;
+}	
 
-
+.feature {
+	height:400px;
 }
+
+.box.topLeft, .topMiddle, .topRight, .bottomLeft, .bottomMiddle, .bottomRight {
+	border:6px solid $marvel-yellow;
+	height:300px;
+	width:275px;
+	display:block;
+	margin:0 auto;
+}
+
+img.characterImage {
+	max-width:100%;
+	height:288px;
+} 
+
+img.comicImage {
+	max-width:100%;
+	height:288px;
+} 
