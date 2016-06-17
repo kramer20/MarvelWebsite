@@ -8,6 +8,30 @@ body {
   border: 8px solid #2e2e2e;
   padding: 10px; }
 
+.contactContainer.left {
+  height: 400px;
+  border: 14px solid #2e2e2e;
+  margin: 0 auto;
+  display: block;
+  background-color: #0572B9;
+  opacity: 0.96;
+  margin-top: 50px;
+  padding-left: 10px; }
+
+.contactContainer.right {
+  height: 400px;
+  border: 14px solid #2e2e2e;
+  background-color: #0572B9;
+  opacity: 0.96;
+  margin-top: 50px; }
+
+.contactContainer.bottom {
+  height: 600px;
+  border: 14px solid #2e2e2e;
+  background-color: #0572B9;
+  opacity: 0.96;
+  margin-top: 50; }
+
 .header {
   height: 170px;
   border: 4px solid black;
@@ -52,21 +76,17 @@ body {
 
 .textContainer {
   height: 800px;
-  width: 948px;
-  display: block;
   margin-top: 50px;
   background-color: #0572B9;
   vertical-align: center;
   opacity: 0.96;
   position: absolute;
-  margin-left: 107px;
   border: 14px solid #2e2e2e;
   padding: 20px; }
 
-.feature {
+.feature.leftTop, .middleTop, .rightTop {
   border: 4px solid #F3C74E;
   height: 180px;
-  width: 180px;
   margin-left: 20px;
   display: inline-block; }
 

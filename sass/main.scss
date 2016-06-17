@@ -69,32 +69,36 @@ $marvel-blue:#0572B9;
 
 .textContainer {
 	height:800px;
-	width:948px;
+	//width:900px;
 	//margin:0 auto;
-	display:block;
+	//display:block;
 	margin-top:50px;
 	//z-index:9999;
 	background-color:$marvel-blue;
 	vertical-align:center;
 	opacity:0.96;
 	position:absolute;
-	margin-left:107px;
+	//margin-left:107px;
 	border: 14px solid lighten($marvel-black,5);
 	padding:20px;
 
 }
 
-.feature {
+.feature.leftTop, .middleTop, .rightTop{
 	border:4px solid $marvel-yellow;
 	height:180px;
-	width:180px;
+	//width:180px;
 	margin-left:20px;
 	display:inline-block;
+
 }
+
+
 
 .three {
 	text-align:center;
 	font-family:$accent-font;
 	font-size:65px;
-	
+
+
 }

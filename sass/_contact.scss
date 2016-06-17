@@ -1,0 +1,29 @@
+.contactContainer.left {
+	height:400px;
+	border:14px solid lighten($marvel-black,5);
+	margin:0 auto;
+	display:block;
+	background-color:$marvel-blue;
+	opacity:0.96;
+	margin-top:50px;
+	padding-left:10px;
+	//position:absolute;
+}
+
+.contactContainer.right {
+	height:400px;
+	border:14px solid lighten($marvel-black,5);
+	background-color:$marvel-blue;
+	opacity:0.96;
+	margin-top:50px;
+	//position:absolute;
+
+}
+
+.contactContainer.bottom {
+	height:600px;
+	border:14px solid lighten($marvel-black,5);
+	background-color:$marvel-blue;
+	opacity:0.96;
+	margin-top:50;
+}
