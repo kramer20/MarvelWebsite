@@ -36,10 +36,9 @@ $( document ).ready(function() {
     	var characterPicture = character.thumbnail.path+"."+character.thumbnail.extension;
     	$(".characterRow").append('<div class="col-lg-4 feature leftTop"><div class="box topLeft"><img class="characterImage" src='+characterPicture+'></div><h3>'+character.name+'</h3></div>');
 
+
     });
-
-
-  }
+    } 
 });
 
 
@@ -80,5 +79,5 @@ $.ajax({
 
   }
 });
- 
+ console.log();
 });

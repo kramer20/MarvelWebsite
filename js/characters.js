@@ -18,7 +18,7 @@ $( document ).ready(function() {
 //loop that writes to HTML
     characters.forEach(function (character){
     	var characterPicture = character.thumbnail.path+"."+character.thumbnail.extension;
-    	//$(".characterRow").append('<div class="col-lg-4 feature leftTop"><div class="box topLeft"><img class="characterImage" src='+characterPicture+'></div><h3>'+character.name+'</h3></div>');
+    	$(".characterTwoRow").append('<div class="col-lg-4 column secondLeft"><div class="box topLeft"><img class="characterImage" src='+characterPicture+'></div><h3>'+character.name+'</h3></div>');
 
     });
 
