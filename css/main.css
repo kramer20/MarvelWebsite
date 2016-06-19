@@ -69,6 +69,38 @@ h3.mapTitle {
   font-size: 30px;
   text-align: center; }
 
+.comic {
+  margin-bottom: 20px; }
+
+p .charDescription, .charComic {
+  font-size: 15px;
+  font-family: "Bangers", cursive;
+  color: #2e2e2e;
+  background-color: #F3C74E;
+  border: 2px solid #2e2e2e; }
+
+h3 {
+  font-family: "Bangers", cursive;
+  font-size: 20px;
+  color: #2e2e2e;
+  text-align: center;
+  margin-top: 20px; }
+
+.btn {
+  font-family: "Bangers", cursive;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 15px;
+  border: 2px solid #2e2e2e;
+  font-size: 20px;
+  color: #2e2e2e;
+  background-color: #F3C74E; }
+  .btn:hover {
+    border: 2px solid #F3C74E;
+    font-size: 20px;
+    color: #F3C74E;
+    background-color: #2e2e2e; }
+
 .header {
   height: 170px;
   border: 4px solid black;
@@ -136,10 +168,17 @@ h3.mapTitle {
   display: block;
   margin: 0 auto; }
 
+.column {
+  border: 6px solid #F3C74E;
+  height: 300px;
+  width: 275px;
+  display: block;
+  margin: 0 auto; }
+
 img.characterImage {
-  max-width: 100%;
+  width: 100%;
   height: 288px; }
 
 img.comicImage {
-  max-width: 100%;
+  width: 100%;
   height: 288px; }

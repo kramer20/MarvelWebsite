@@ -6,6 +6,7 @@ $nav-font:'Bangers', cursive;
 $marvel-blue:#0572B9;
 $border-content:10px solid lighten($marvel-black,5);
 $border-nav:8px solid lighten($marvel-black,5);
+$title-font:'Iceland', cursive;
 
 @import 'images';
 @import 'contact';
@@ -99,12 +100,20 @@ $border-nav:8px solid lighten($marvel-black,5);
 	margin:0 auto;
 }
 
+.column {
+	border:6px solid $marvel-yellow;
+	height:300px;
+	width:275px;
+	display:block;
+	margin:0 auto;
+}
+
 img.characterImage {
-	max-width:100%;
+	width:100%;
 	height:288px;
 } 
 
 img.comicImage {
-	max-width:100%;
+	width:100%;
 	height:288px;
 } 

@@ -1,0 +1,34 @@
+p .charDescription, .charComic {
+	font-size:15px;
+	font-family:$nav-font;
+	color:lighten($marvel-black,5);
+	background-color:$marvel-yellow;
+	border:2px solid lighten($marvel-black,5);
+
+}
+
+h3 {
+	font-family:$nav-font;
+	font-size:20px;
+	color:lighten($marvel-black,5);
+	text-align:center;
+	margin-top:20px;
+}
+
+.btn {
+	font-family:$nav-font;
+	margin:0 auto;
+	display:block;
+	margin-bottom:15px;
+	border:2px solid lighten($marvel-black,5);
+	font-size:20px;
+	color:lighten($marvel-black,5);
+	background-color:$marvel-yellow;
+
+		&:hover {
+			border:2px solid $marvel-yellow;
+			font-size:20px;
+			color:$marvel-yellow;
+			background-color:lighten($marvel-black,5);
+		}
+}
