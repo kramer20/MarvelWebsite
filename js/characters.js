@@ -18,12 +18,14 @@ $( document ).ready(function() {
 //loop that writes to HTML
     characters.forEach(function (character){
     	var characterPicture = character.thumbnail.path+"."+character.thumbnail.extension;
-    	$(".characterTwoRow").append('<div class="col-lg-4 column secondLeft"><div class="box topLeft"><img class="characterImage" src='+characterPicture+'></div><h3>'+character.name+'</h3></div>');
+      var characterComic = character.comics.items+" "+character.comics.name;
+    	$(".characterTwoRow").append('<div class="col-lg-4 column secondLeft"><div class="box topLeft"><img class="characterImage" src='+characterPicture+'></div><h3>'+character.name+'</h3><div class="moreInfo"><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">More Info</button></div><div class="collapse" id="collapseExample"><div class="card card-block"><p>'+character.description+'</p><p>'+characterComic+'</p></div></div>');
 
     });
 
 
   }
 });
+ console.log();
 
 });   
