@@ -117,3 +117,45 @@ img.comicImage {
 	width:100%;
 	height:288px;
 } 
+
+.bottomNav {
+	height:60px;
+	background-color:$marvel-red;
+	margin-top:80px;
+	border:4px solid lighten($marvel-black,5);
+
+		ul.navMenuBottom {
+			margin:0 auto;
+			display:block;
+			margin-left:356px;
+			padding-top:6px;
+				
+			
+			li.navListBottom {
+				display:inline-block;
+				text-align: center;
+				list-style:none;
+
+				a.bottom {
+					color: lighten($marvel-black,5);
+					font-size:18px;
+					text-decoration: none;
+					font-family:$nav-font;
+					border: 2px solid $marvel-yellow;
+					padding:5px;
+					margin:0 auto;
+					display:block;
+
+					&:hover {
+						background-color:$marvel-yellow;
+						border:2px solid lighten($marvel-black,5);
+						color:$marvel-red;
+					}
+
+				}
+				
+			}
+
+		}
+}
+
