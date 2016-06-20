@@ -14,12 +14,33 @@ $( document ).ready(function() {
 //define what goes onto page
 	var characters = taco.data.results;
 
+$("body").on("click",".moreInfo", function(){
+
+    var dropDown = $(this).parent().find(".moreInfoDiv");
+    dropDown.toggle();
+})
+
+
+//function for building out character comics 
+function buildComics(comics){
+  var bigString = "";
+    //to set how many comics you want to show
+  //var counter = 0;
+  comics.forEach(function(comic){
+    //if(counter<=5){
+    bigString += `<p>${comic.name}</p>`;
+   //counter++;
+    });
+
+  return bigString;
+};
 
 //loop that writes to HTML
     characters.forEach(function (character){
     	var characterPicture = character.thumbnail.path+"."+character.thumbnail.extension;
-      var characterComic = character.comics.items+character.comics.resourceURI+character.comics.name;
-    	$(".characterTwoRow").append('<div class="col-lg-4 characters secondLeft"><div class="box topLeft"><img class="characterImage" src='+characterPicture+'></div><h3>'+character.name+'</h3><div class="moreInfo"><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">More Info</button></div><div class="collapse" id="collapseExample"><div class="card card-block"><p class="charDescription">'+character.description+'</p><p class="charComic">'+characterComic+'</p></div></div>');
+      var characterComic = character.comics.items;
+      characterComic = buildComics(characterComic);
+    	$(".characterTwoRow").append('<div class="col-lg-4 characters secondLeft"><div class="box topLeft"><img class="characterImage" src='+characterPicture+'></div><h3>'+character.name+'</h3><div class="moreInfo"><button class="btn btn-primary moreInfo" type="button">More Info</button></div><div class="collapse moreInfoDiv" id="collapseExample"><div class="card card-block"><p class="charDescription">'+character.description+'</p><p class="charComic">'+characterComic+'</p></div></div>');
 
     });
 
