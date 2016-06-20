@@ -4,6 +4,8 @@ p .charDescription, .charComic {
 	color:lighten($marvel-black,5);
 	background-color:$marvel-yellow;
 	border:2px solid lighten($marvel-black,5);
+	z-index:9999;
+	position:absolute;
 
 }
 

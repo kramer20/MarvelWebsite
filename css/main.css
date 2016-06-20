@@ -77,7 +77,9 @@ p .charDescription, .charComic {
   font-family: "Bangers", cursive;
   color: #2e2e2e;
   background-color: #F3C74E;
-  border: 2px solid #2e2e2e; }
+  border: 2px solid #2e2e2e;
+  z-index: 9999;
+  position: absolute; }
 
 h3 {
   font-family: "Bangers", cursive;
