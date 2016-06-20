@@ -213,3 +213,7 @@ img.comicImage {
           background-color: #F3C74E;
           border: 2px solid #2e2e2e;
           color: #ED1A23; }
+
+@media screen and (max-width: 1199px) {
+  .hideBanner {
+    display: none; } }
