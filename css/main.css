@@ -51,7 +51,7 @@ i.envelopeIcon {
   display: block;
   font-size: 50px; }
 
-p {
+.fa p {
   font-family: "Bangers", cursive;
   font-size: 30px;
   color: #2e2e2e;
@@ -70,20 +70,35 @@ h3.mapTitle {
   text-align: center; }
 
 .comic {
-  height: 450px; }
+  height: 460px; }
 
-p .charDescription, .charComic {
-  font-size: 15px;
-  font-family: "Bangers", cursive;
+.card {
   color: #2e2e2e;
   background-color: #F3C74E;
   border: 2px solid #2e2e2e;
   z-index: 9999;
-  position: absolute; }
+  position: absolute;
+  text-align: center; }
+  .card p {
+    font-size: 18px;
+    margin: 7px;
+    font-family: "Boogaloo", cursive; }
+
+.card {
+  color: #2e2e2e;
+  background-color: #F3C74E;
+  border: 2px solid #2e2e2e;
+  z-index: 9999;
+  position: absolute;
+  text-align: center; }
+  .card p {
+    font-size: 18px;
+    margin: 7px;
+    font-family: "Boogaloo", cursive; }
 
 h3 {
   font-family: "Bangers", cursive;
-  font-size: 20px;
+  font-size: 25px;
   color: #2e2e2e;
   text-align: center;
   margin-top: 20px; }

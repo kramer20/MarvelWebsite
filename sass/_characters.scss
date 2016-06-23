@@ -1,17 +1,22 @@
-p .charDescription, .charComic {
-	font-size:15px;
-	font-family:$nav-font;
+.card {
 	color:lighten($marvel-black,5);
 	background-color:$marvel-yellow;
 	border:2px solid lighten($marvel-black,5);
 	z-index:9999;
 	position:absolute;
+	text-align:center;
+
+	p {
+		font-size: 18px;
+		margin:7px;
+		font-family:$third-font;
+	}
 
 }
 
 h3 {
 	font-family:$nav-font;
-	font-size:20px;
+	font-size:25px;
 	color:lighten($marvel-black,5);
 	text-align:center;
 	margin-top:20px;

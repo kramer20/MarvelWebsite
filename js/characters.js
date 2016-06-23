@@ -18,7 +18,7 @@ $("body").on("click",".moreInfo", function(){
 
     var dropDown = $(this).parent().find(".moreInfoDiv");
     dropDown.toggle();
-})
+});
 
 
 //function for building out character comics 
@@ -33,7 +33,7 @@ function buildComics(comics){
     });
 
   return bigString;
-};
+}
 
 //loop that writes to HTML
     characters.forEach(function (character){

@@ -12,13 +12,20 @@ $( document ).ready(function() {
 	}
 
 //define what goes onto page
-	var comics = taco.data.results;
+  var comics = taco.data.results;
+
+$("body").on("click",".moreInfo", function(){
+
+    var dropDown = $(this).parent().find(".moreInfoDiv");
+    dropDown.toggle();
+});
+
 
 
 //loop that writes to HTML
     comics.forEach(function (comic){
     	var comicImage = comic.thumbnail.path+"."+comic.thumbnail.extension;
-    	$(".comicTwoRow").append('<div class="col-lg-4 comic leftTop"><div class="column secondLeft"><img class="comicImage" src='+comicImage+'></div><h3>'+comic.title+'</h3><div class="moreInfo"><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">More Info</button></div><div class="collapse" id="collapseExample"><div class="card card-block"><p class="comicDescription>'+comic.pageCount+'</p></div></div>');
+    	$(".comicTwoRow").append('<div class="col-lg-4 comic leftTop"><div class="column secondLeft"><img class="comicImage" src='+comicImage+'></div><h3>'+comic.title+'</h3><div class="moreInfo"><button class="btn btn-primary moreInfo" type="button">More Info</button></div><div class="collapse moreInfoDiv" id="collapseExample"><div class="card card-block"><p class="comicDescription">'+comic.description+'</p></div></div>');
 
     });
 
