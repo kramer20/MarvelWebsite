@@ -84,6 +84,9 @@ h3.mapTitle {
     margin: 7px;
     font-family: "Boogaloo", cursive; }
 
+span {
+  display: inline; }
+
 .card {
   color: #2e2e2e;
   background-color: #F3C74E;
