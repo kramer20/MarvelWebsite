@@ -57,11 +57,12 @@ i.envelopeIcon {
 	
 }
 
-.fa p {
-	font-family:$nav-font;
-	font-size:30px;
-	color:lighten($marvel-black,5);
+
+p {
 	text-align:center;
+	font-family:$nav-font;
+	font-size:19px;
+	color:$marvel-black;
 }
 
  #map {

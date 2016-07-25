@@ -51,11 +51,11 @@ i.envelopeIcon {
   display: block;
   font-size: 50px; }
 
-.fa p {
+p {
+  text-align: center;
   font-family: "Bangers", cursive;
-  font-size: 30px;
-  color: #2e2e2e;
-  text-align: center; }
+  font-size: 19px;
+  color: #212121; }
 
 #map {
   width: 100%;
@@ -168,7 +168,7 @@ h3 {
 
 .textContainer {
   margin-top: 50px;
-  background-color: #0572B9;
+  background-color: rgba(5, 114, 185, 0.88);
   vertical-align: center;
   opacity: 0.96;
   border: 10px solid #2e2e2e;
@@ -210,7 +210,9 @@ img.comicImage {
   height: 60px;
   background-color: #ED1A23;
   margin-top: 80px;
-  border: 4px solid #2e2e2e; }
+  border: 4px solid #2e2e2e;
+  z-index: 1;
+  position: relative; }
   .bottomNav ul.navMenuBottom {
     margin: 0 auto;
     display: block;
