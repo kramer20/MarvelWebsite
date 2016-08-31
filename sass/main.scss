@@ -13,6 +13,7 @@ $third-font:'Boogaloo', cursive;
 @import 'contact';
 @import 'comics';
 @import 'characters';
+@import 'mobile';
 
 .header {
 	height:170px;
@@ -163,6 +164,30 @@ img.comicImage {
 			}
 
 		}
+}
+
+@media screen and (max-width:380px){
+	img.marvelLogo{
+		height:104px !important;
+	}
+}
+
+@media screen and (max-width:507px){
+	#menu ul{
+		background-color:$marvel-yellow;
+	}
+}
+
+@media screen and (max-width:549px){
+	img.marvelLogo{
+		height:149px;
+	}
+}
+
+@media screen and (max-width:424px){
+	h1.three{
+		font-size: 45px;
+	}
 }
 
 @media screen and (max-width: 1199px) {
