@@ -3,7 +3,7 @@ $( document ).ready(function() {
 
 //anytime pull info from
     $.ajax({
-  	url: 'http://gateway.marvel.com:80/v1/public/characters?apikey=a3d450fd87cce2aeff11efbcc111f789',
+  	url: 'https://marvelapi.herokuapp.com/characters',
   	success: function successHandler(taco) {
 
     //function to get random number w/in the range
